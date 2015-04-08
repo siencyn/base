@@ -11,9 +11,9 @@ RUN apk add --update openjdk7-jre-base \
     && mv jenkins.war /home/jenkins.war \
     && mkdir /home/jenkins
 
-ENV JENKINS_HOME=/home/jenkins
+ENV JENKINS_HOME /home/jenkins
 ENV JAVA_HOME /usr/lib/jvm/java-1.7-openjdk
-ENV JAVA=$JAVA_HOME/bin
+ENV JAVA $JAVA_HOME/bin
 ENV PATH $PATH:$JAVA_HOME:$JAVA
 
 ENTRYPOINT ["java", "-Djava.awt.headless=true", "jenkins.war"]
