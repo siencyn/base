@@ -16,4 +16,6 @@ ENV JAVA_HOME /usr/lib/jvm/java-1.7-openjdk
 ENV JAVA $JAVA_HOME/bin
 ENV PATH $PATH:$JAVA_HOME:$JAVA
 
+WORKDIR /home
+
 ENTRYPOINT ["java", "-Djava.awt.headless=true", "jenkins.war"]
