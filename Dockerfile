@@ -18,4 +18,4 @@ ENV PATH $PATH:$JAVA_HOME:$JAVA
 
 WORKDIR /home
 
-ENTRYPOINT ["java", "-Djava.awt.headless=true", "-jar" "jenkins.war"]
+ENTRYPOINT ["java", "-Djava.awt.headless=true", "-jar" "/home/jenkins.war"]
