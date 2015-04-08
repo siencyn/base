@@ -7,7 +7,7 @@ MAINTAINER Manuel Weidmann <weidmann.manuel@gmail.com>
 RUN apk add --update openjdk7-jre-base \
     ttf-dejavu \
     && rm -rf /var/cache/apk/* \
-    && wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war \
+    && wget http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war \
     && mv jenkins.war /home/jenkins.war \
     && mkdir /home/jenkins
 
